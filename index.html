@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Vieple Graduate Developer Program- Rahul</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Library used for icons in this page-->
+		<script src="program.js"></script> <!--JavaScript file where the recursive function exist-->
+		<style>
+			
+			div.polaroid {
+			  background-color: white;
+			  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			  margin-bottom: 25px;
+			  overflow: auto;
+			  position:relative;
+			  padding-left:20px;
+			  text-align:justify;
+			}
+			.card {
+			  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			  max-width: 300px;
+			  margin: auto;
+			  text-align: center;
+			  font-family: arial;
+			}
+			
+			.title {
+			  color: grey;
+			  font-size: 18px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--Question part starts here-->
+		<div class="polaroid">
+			<h1>Question</h1>
+			<p>
+				4 characters ['A', 'B', 'C', 'D'] and require to write a function to print out all possible string combinations in length of 5 using the given characters. Click below Button to View Answer.
+				<br><br>
+				<input type="Button" onclick="startProgram()" value="Click here for Answer">
+			</p>
+		</div>	
+		<!--Question container ends here!-->
+		<!--Answer container start here-->
+			<div>
+				<!--Container for Answer-->
+				<div class="polaroid" id="answerContainer" style="width:40%; height:550px; float:left; overflow:auto;">
+					<h4 id="#top">Answer!</h4>
+					<p style="padding-right:20px;">This Program has been written using Recursive Function called printPossibleWordsRec(). The below output is the possible outcomes of the 5 letter words using letters A B C D.</p>
+					<p style="padding-right:20px;">I have added another feature search which makes it easy for user to search for WORD as it shows the Line Number where the word has been located. </p>
+					<p style="padding-right:20px;">Programming Languages used: HTML, CSS, JavaScript</p>
+					<input type="text" placeholder="Search.." id="search" maxlength="5">
+					<button onclick="searchArray()"><i class="fa fa-search"></i></button>
+					<p id="result" style="padding-right:10px;"></p>
+					<p id="output"></p>
+					<a href="#" id="anchor" onclick="goToTop()" style="visibility:hidden;">Go to top</a>
+				</div>
+				<!--Container for Answer ends here-->
+				<!--Personal Information Container starts here-->
+				<div class="card" style="width:50%; float:center; overflow:hidden;">
+					<img src="profilepic.png" style="width:100%; ">
+					<h2>Rahul Nayaki</h2>
+					<p class="title">Masters of Information Technology</p>
+					<p>nayaki.rahul.14@gmail.com</p>
+					<div style="margin: 24px 0;">
+						<a href="https://www.linkedin.com/in/rahul-nayaki-74b48b157/" target="_blank" style="text-decoration:none; color:black;"><i class="fa fa-linkedin"></i></a>  
+					</div>
+				</div>
+				<!--Personal Information container ends here!--->
+			</div>
+			<!--Answer container ends here!--->
+	</body>
+</html>
